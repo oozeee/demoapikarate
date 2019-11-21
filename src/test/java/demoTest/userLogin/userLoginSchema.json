@@ -1,0 +1,6 @@
+{
+  "id": "#string",
+  "username": "#string",
+  "authtoken": "#string",
+  "date": "#number"
+}

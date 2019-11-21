@@ -1,0 +1,4 @@
+{"id":"#string",
+ "request":{"accountname":"#string","accountType":"#string","enable":"#boolean","accountowner":"#string","additionalinforamtion":"#string"},
+ "status":"#string"
+}
