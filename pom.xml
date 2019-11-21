@@ -68,7 +68,7 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling.plugin.version}</version>
                 <configuration>
-                    <disableCompiler>false</disableCompiler>
+                    <simulationsFolder>src/test/java</simulationsFolder>
                 </configuration>
             </plugin>
         </plugins>
