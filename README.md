@@ -1,4 +1,4 @@
-###Features
+### Features
 - Environment switching using *'karate.env'* variable. Environments available in test suite are local and aws
 - Reuse tests scripts by calling in other scripts. This allows easy re-use and maintenance of authentication and set-up flows
 - Data driven tests using Cucumber data-tables
