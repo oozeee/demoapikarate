@@ -9,22 +9,22 @@
     - AutomationSuiteParallelRunner: runs tests faster in *karate* parallel execution mode and generates a cucumber html report
 
 
-#####Pre-requisites
+##### Pre-requisites
 - Java
 - Scala
 
-#####Run entire test suite in non parallel mode
+##### Run entire test suite in non parallel mode
 ````
 mvn clean test
 mvn clean test -Dtest=AutomationSuiteTest
 ````
 
-#####Run entire test suite in parallel mode
+##### Run entire test suite in parallel mode
 ````
 mvn clean test -Dtest=AutomationSuiteParallelRunner
 ````
 
-####Test execution examples
+#### Test execution examples
 Switch between environments (local and aws)
 ````
 mvn clean test -DargLine="-Dkarate.env=local" -Dtest=AutomationSuiteTest
@@ -36,12 +36,12 @@ mvn test -Dkarate.options="--tags ~@ignore classpath:demoTest/viewRequests" -Dte
 mvn test -Dkarate.options="--tags ~@ignore classpath:demoTest/healthCheck" -Dtest=AutomationSuiteTest
 ````
 
-###Performance Test Execution
+### Performance Test Execution
 Run gatling test with the following command
 ````
 mvn clean test-compile gatling:test
 mvn clean test-compile gatling:test -DargLine="-Dkarate.env=local"
 ````
 
-###Interested to know more about Karate
+### Interested to know more about Karate
 To see more details about *karate* API testing tool, visit *Karate* home page on github: https://github.com/intuit/karate
