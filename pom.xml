@@ -14,7 +14,6 @@
         <maven.compiler.version>3.6.0</maven.compiler.version>
         <karate.version>0.9.4</karate.version>
         <cucumber.reporting.version>4.8.0</cucumber.reporting.version>
-        <gatling.plugin.version>3.0.2</gatling.plugin.version>
     </properties>
 
     <dependencies>
@@ -22,12 +21,6 @@
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-apache</artifactId>
             <version>${karate.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-gatling</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.intuit.karate</groupId>
@@ -61,14 +54,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <compilerArgument>-Werror</compilerArgument>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>io.gatling</groupId>
-                <artifactId>gatling-maven-plugin</artifactId>
-                <version>${gatling.plugin.version}</version>
-                <configuration>
-                    <simulationsFolder>src/test/java</simulationsFolder>
                 </configuration>
             </plugin>
         </plugins>
