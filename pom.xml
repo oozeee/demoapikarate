@@ -55,6 +55,9 @@
                 <groupId>io.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>3.0.2</version>
+                <configuration>
+                    <simulationsFolder>src/test/java/demoTest</simulationsFolder>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
