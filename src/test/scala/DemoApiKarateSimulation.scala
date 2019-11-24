@@ -7,10 +7,12 @@ import scala.concurrent.duration._
 class DemoApiKarateSimulation extends Simulation{
 
   /// Scenario definition
-  val healthCheck = scenario("healthCheck").exec(karateFeature("classpath:demoTest/healthCheck/healthCheck.feature"))
+  val userLogin = scenario("userLogin").exec(karateFeature("classpath:demoTest/userLogin/userLogin.feature"))
 
   /// Setup load model
   setUp(
-    healthCheck.inject(constantUsersPerSec(30) during(180 second))
+    userLogin.inject(constantUsersPerSec(5) during(30 second))
   )
 }
+
+
