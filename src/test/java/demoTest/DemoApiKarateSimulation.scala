@@ -2,6 +2,7 @@ package demoTest
 
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef._
+
 import scala.concurrent.duration._
 
 class DemoApiKarateSimulation extends Simulation{
@@ -11,7 +12,7 @@ class DemoApiKarateSimulation extends Simulation{
 
   /// Setup load model
   setUp(
-    userLogin.inject(constantUsersPerSec(5) during(30 second))
+    userLogin.inject(constantUsersPerSec(5) during(10 second))
   )
 }
 
